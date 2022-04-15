@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="tip.css">
+   
+</head>
+<title>Tip Calculator</title>
+
+<body>
+    <div class="img">
+        <img src="jack-prew-xRkhdEPJ9cc-unsplash.jpg" width="1500" height="730" alt="">
+    </div>
+
+
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <div class="sam">
+
+            <p>Bill Amount</p>
+
+
+            <input type="text" id="amount" placeholder="Total Bill in Rupees">
+
+
+
+
+            <p>Level of service </p>
+
+
+
+            <select id="services">
+                <option selected disabled hidden>
+                    Select
+                </option>
+                <option value="0.25">25% - Outstanding</option>
+                <option value="0.20">20% - Excellent</option>
+                <option value="0.15">15% - Good</option>
+                 <option value="0.10">10% - Bad</option>
+                <option value="0.05">5% - Worst</option>
+            </select>
+
+
+
+
+            <p>Total number of persons</p>
+
+
+
+            <input type="text" id="persons" placeholder="Number of people sharing the bill">
+            <button id="calculate" onclick="calculateTip">Calculate</button>
+        </div>
+    
+    <div id="totalTip">
+        <sup>₹</sup><span id="tipc">0.00</span>
+        <small id="each">each</small>
+    </div>
+    </div>
+</body>
+<script type="text/javascript" src="tip.js">
+</script>
+
+</html>
